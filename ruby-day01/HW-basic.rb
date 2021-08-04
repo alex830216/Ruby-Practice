@@ -15,13 +15,13 @@
 # p [1, 3, 4, 1, 7, nil, 7].reject {|element| element.nil?}
 #                          .sort
 #                          .uniq
-                         
+
 # 3. 印出 1 ~ 100 之間所有的單數
-# 1.upto(100) { |i|
+# 1.upto(100) do |i|
 #   if i.odd?
 #     puts i
 #   end  
-# }
+# end
 
 # 4. 計算 1 ~ 100 的總和
 # p 1.upto(100).to_a.sum
@@ -37,5 +37,12 @@
 # selects = a.uniq
 # for select in selects
 #   times = a.count(selects[select - 1])
+#   p ("#{select} 出現 #{times} 次")
+# end
+
+# a = [1, 2, 3, 1, 2, 1, 3, 1, 2, 3, 4, 5, 6]
+# selects = a.uniq
+# selects.each do |select|
+#   times = a.count(select)
 #   p ("#{select} 出現 #{times} 次")
 # end
